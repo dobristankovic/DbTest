@@ -1,0 +1,11 @@
+﻿SET QUOTED_IDENTIFIER, ANSI_NULLS ON
+GO
+CREATE PROCEDURE [dbo].[VratiIme]
+	@EmpNo INT
+AS
+
+		SELECT e.ename FROM dbo.Emp e
+		WHERE e.empno = @EmpNo
+
+RETURN 0
+GO
